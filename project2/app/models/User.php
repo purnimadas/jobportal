@@ -10,6 +10,11 @@ class User extends Eloquent {
 
 	public $timestamps = false;
 
+	public function references()
+    {
+        return $this->hasMany('Reference');
+    }
+
 	
 
 }

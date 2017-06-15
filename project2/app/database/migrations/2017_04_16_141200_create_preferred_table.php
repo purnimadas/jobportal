@@ -15,7 +15,7 @@ class CreatePreferredTable extends Migration {
 		Schema::create('preferred', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('job_seeker_id');
+			$table->integer('user_id');
 			$table->string('preferred_district',250);
 			$table->string('preferred_country',250);
 			$table->integer('preferred_category');

@@ -7,6 +7,7 @@
 <!--<link rel="stylesheet" type="text/css" href="style1.css" />-->
 {{HTML::style('style1.css')}}
 {{HTML::style('form.css')}}
+{{HTML::style('table.css')}}
 
 </head>
 
@@ -18,7 +19,7 @@
 			<a href="#"><img src="images/meta3.gif" alt="" width="17" height="14" /></a>
 			<a href="#"><img src="images/meta4.gif" alt="" width="15" height="14" /></a>
 		</div>
-		<p>Recruiters: <a href="#">Log in</a> or <a href="#">Find out more</a></p>																																															
+		<p>Recruiters: <a href="{{action('JobsController@login')}}">Log in</a> or <a href="#">Find out more</a></p>																																															
 	</div>
 	<div id="header">
 		<a href="index.html" class="logo"><img src="images/logo.jpg" alt="setalpm" width="149" height="28" /></a>                                                                                                                                                                                                                                      
@@ -29,7 +30,14 @@
 			<li><a href="#">Our Career</a></li>
 			<li><a href="#">About Us</a></li>
 			<li><a href="#">Help</a></li>
-			<li class="last"><a href="#">Register</a></li>
+			<li class="last">
+				<select onChange="window.location.href=this.value" id="register" name="register">
+                   <option value="">Register</option></a>
+                   <option value="{{action('JobsController@create_user')}}">Job Seeker</option>
+                   <option value="{{action('JobsController@create_user')}}">Employeer</option>
+                   <option value="{{action('JobsController@create_user')}}">Admin</option>
+                </select>
+			</li>
 		</ul>
 		
 

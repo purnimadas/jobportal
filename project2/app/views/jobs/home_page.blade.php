@@ -36,7 +36,7 @@
 
 				@if(count($jobcategories))
                      @foreach ($jobcategories as $jobcategory)
-					<li><a href="#">{{$jobcategory->categories }}</a></li>
+					<li><a href="{{action('JobsController@showjob',$jobcategory->id)}}">{{$jobcategory->categories }}</a></li>
 				@endforeach
                      @endif 
 				</ul>

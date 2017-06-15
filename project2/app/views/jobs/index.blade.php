@@ -14,6 +14,7 @@
 			<tr>
 				
 				<td><a href="{{action('JobsController@job_detail',$job->id)}}"><i><h2 id="com_name">            {{$job->company_name }} </h2> </i> </a>
+				        
 				        <h3>      {{$job->job_post }}  </h3>
 				        <h3>Educational Requirements :{{$job->educational_requirements }}  </h3>
 				        <h3>Experience :  {{$job->experience }}   </h3>

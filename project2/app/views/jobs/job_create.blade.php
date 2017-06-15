@@ -4,17 +4,13 @@
 	
 <div>
 
-  {{print_r($categories)}}
+ <!-- {{print_r($categories)}}-->
 	<form action="{{action('JobsController@store_job')}}" method="POST" enctype="multipart/form-data" class="form-horizontal" role="form">
 
-	   <label for="country">Country</label>
-       {{Form::select('country', [''=>'Please Select']+$categories, Input::old('country',''),['id'=>'country'])}}
+	   <label for="category">Category</label>
+       {{Form::select('category', [''=>'Please Select']+$categories, Input::old('category',''),['id'=>'category'])}}
 
-      <!--  <select id="country" name="country">
-           <option value="australia">Australia</option>
-           <option value="canada">Canada</option>
-           <option value="usa">USA</option>
-       </select> -->
+      
        
        <label for="fname">Company Name</label>
        <input type="text" id="fname" value="{{Input::old('company_name')}}" name="company_name" placeholder="Company Name..">{{$errors->first('company_name')}}

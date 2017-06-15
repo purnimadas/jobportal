@@ -10,9 +10,9 @@ class Education extends Eloquent {
 
 	public static $rules = array();
 
-    public function jobseeker()
+    public function user()
     {
-        return $this->belongsTo('Jobseeker');
+        return $this->belongsTo('User');
     }
 
 }
