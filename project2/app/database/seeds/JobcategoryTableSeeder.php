@@ -14,10 +14,16 @@ class JobcategoryTableSeeder extends Seeder {
 		// $this->call('UserTableSeeder');
 
 		$jobcategories = array(
+             ['categories'=>'Accounting/Finance'],
+             ['categories'=>'Bank/Non-Bank Fin.Instution'],
              ['categories'=>'Education/Trainning'],
-             ['categories'=>'Engineering/Architecture'],
-             ['categories'=>'It/Telecommunication'],
-             ['categories'=>'Medical']
+             ['categories'=>'Engineer/Architects'],
+             ['categories'=>'Research/Consultancy'],
+             ['categories'=>'Customer Support/Call Certre'],
+
+             ['categories'=>'Security/Support Service'],
+             ['categories'=>'IT/Telecommunication'],
+             ['categories'=>'Medical/Pharma']
 		);
 
 		// Uncomment the below to run the seeder
