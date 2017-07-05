@@ -15,6 +15,11 @@ class User extends Eloquent {
         return $this->hasMany('Reference');
     }
 
+    public function educations()
+    {
+        return $this->hasMany('Education');
+    }
+
 	
 
 }

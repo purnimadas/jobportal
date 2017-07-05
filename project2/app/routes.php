@@ -37,5 +37,6 @@ Route::get('/showj/{id}',   'JobsController@showjob');
 
 Route::get('eduv',   'JobsController@edu_view');
 Route::get('userref/{id}',   'JobsController@user_ref');
+Route::get('useredu/{id}',   'JobsController@user_edu');
 
 

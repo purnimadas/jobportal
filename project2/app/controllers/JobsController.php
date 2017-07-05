@@ -11,6 +11,16 @@ public function edu_view(){
 						->with('educations', $educations);
 	}	
 
+
+public function user_edu($id){
+         //educations of specific user
+		// fetch all row from database
+		$educations = User::find($id)->educations;
+
+		return View::make('jobs.user_education')
+						->with('educations', $educations);
+	}
+
 public function user_ref($id){
 
 		// fetch all row from database
@@ -51,7 +61,7 @@ public function home(){
 public function showjob($id){
 
 		// fetch all row from database
-		$jobs = Job::where('jobcategory_id', '=', $id )->get();
+		$jobs = Job::where('jobcategory_id', '=', $id )->paginate(10);
 
 		 return View::make('jobs.alljob')
             ->with('jobs', $jobs);

@@ -27,9 +27,18 @@
 			</tr>
 			@endforeach
 		</table>
+
+  
+  {{$jobs->links();}}
+  
+  
+
+      
+		
 	@else
 		<p>No Contacts</p>
 	@endif
+
 
 
 @stop

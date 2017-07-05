@@ -55,11 +55,11 @@ class UserTableSeeder extends Seeder {
 
 
             ['email'=>'Raj@gmail.com',         'password'=>'1234', 'user_type'=>'admin'],
-            ['email'=>'bdbangla@gmail.com',    'password'=>'1234', 'user_type'=>'employer'],
+            
             ['email'=>'sathi@gmail.com',       'password'=>'1235', 'user_type'=>'jobseeker'],
             ['email'=>'Ganjendra@gmail.com',   'password'=>'1234', 'user_type'=>'admin'],
             ['email'=>'sakila@gmail.com',      'password'=>'1235', 'user_type'=>'jobseeker'],
-            ['email'=>'bdnews@gmail.com',      'password'=>'1234', 'user_type'=>'employer'],
+            
             ['email'=>'tuni@gmail.com',        'password'=>'1235', 'user_type'=>'jobseeker'],
             ['email'=>'rakesh@gmail.com',      'password'=>'1234', 'user_type'=>'admin'],
             ['email'=>'sejuti@gmail.com',      'password'=>'1235', 'user_type'=>'jobseeker']
